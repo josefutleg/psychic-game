@@ -20,6 +20,7 @@ console.log(alphabet[randomLetter]);
 function play(x){
     var userInput = x.key;
     guessesCounter = guessesCounter -1;
+
     if(userInput !== (alphabet[randomLetter])) {
         guesses.push(userInput);
         document.getElementById('userGuesses').innerText = guesses;
